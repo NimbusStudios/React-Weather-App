@@ -15,13 +15,13 @@ body {
 /* Main app container */
 .app {
   text-align: center;
-  padding: 20px;
+  padding: 80px;
 }
 
 /* Theme styles */
 .app.light {
   background-color: #ffffff;
-  color: #202122;
+  color: #333;
 }
 
 .app.dark {
@@ -39,7 +39,7 @@ header {
 }
 
 header h1 {
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: 24px;
 }
 
@@ -62,20 +62,32 @@ header button:hover {
 /* Weather info styles */
 .weather-info {
   padding: 20px;
-  background-color: #12bddb;
+  background-color: #3498db;
   color: white;
   border-radius: 8px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
 }
 
 .weather-info h2 {
-  font-size: 22px;
+  font-size: 3rem;
   margin-bottom: 10px;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
 }
 
 .weather-info p {
   font-size: 18px;
   margin: 5px 0;
+  padding: 1rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Form styles */
@@ -90,21 +102,23 @@ form input {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #3498db;
-  border-radius: 5px;
+  border-radius: 50px;
   margin-right: 10px;
-  margin: 40px;
   width: 300px;
+  text-align: center;
+  margin: 3rem ;
 }
 
 form button {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  background-color: #3498db;
-  color: white;
+  background-color: #f3f5f7;
+  color: #3498db;
   transition: background-color 0.3s;
+  margin: 3rem ;
 }
 
 form button:hover {
@@ -112,11 +126,15 @@ form button:hover {
 }
 
 /* Add responsive design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   form {
     flex-direction: column;
+    margin: 3rem ;
   }
-
+  .weather-info {
+    flex-direction: column;
+    margin: 3rem ;
+  }
   form input {
     margin-bottom: 10px;
     width: 100%;
