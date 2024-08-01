@@ -1,49 +1,132 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .app {
-    text-align: center;
-  }
-  
-  .app.light {
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  .app.dark {
-    background-color: #333;
-    color: #f0f0f0;
-  }
-  
-  header {
-    padding: 20px;
-    background-color: #282c34;
-    color: white;
-  }
-  
-  header button {
-    margin-left: 10px;
-  }
-  
-  .weather-info {
-    margin-top: 20px;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Main app container */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Theme styles */
+.app.light {
+  background-color: #ffffff;
+  color: #202122;
+}
+
+.app.dark {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* Header styles */
+header {
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+header button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2980b9;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+header button:hover {
+  background-color: #1f6391;
+}
+
+/* Weather info styles */
+.weather-info {
+  padding: 20px;
+  background-color: #12bddb;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.weather-info h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin: 40px;
+  width: 300px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1f6391;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
   form {
-    margin-top: 20px;
+    flex-direction: column;
   }
-  
+
   form input {
-    padding: 10px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
   }
-  
-  form button {
-    padding: 10px 20px;
-    font-size: 16px;
+
+  header {
+    font-size: 18px;
   }
-  
+
+  header button {
+    width: 100%;
+  }
+}

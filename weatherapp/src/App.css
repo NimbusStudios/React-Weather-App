@@ -1,18 +1,38 @@
+/* This is the main container for the entire app. It's styled
+   to have its contents centered both horizontally and vertically. 
+   The padding is set to 60rem, which is equivalent to 60 times
+   the base font size of the browser. */
 .App {
   text-align: center;
+  padding: 60rem;
 }
 
+/* This is the logo for the app. It's styled to take up a height of
+   40vmin, which is equivalent to 40% of the viewport height. The
+   pointer-events property is set to none, which means clicks on the
+   logo will pass through to the elements underneath it. */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* This is a media query that targets devices that don't have reduced motion
+   enabled. It applies an animation to the logo that causes it to spin
+   continuously. The animation is named "App-logo-spin" and it lasts for
+   20 seconds. The animation is applied to the logo element using the
+   animation property. */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* This is the header for the app. It's styled to have a background color
+   of #282c34, a minimum height of 100vh (which is equivalent to 100% of
+   the viewport height), and it's displayed using flexbox with a column
+   direction and centered content. The font size is calculated to be 10px
+   plus 2vmin, which is equivalent to 10% of the viewport width. The color
+   is set to white. */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +56,4 @@
     transform: rotate(360deg);
   }
 }
+
