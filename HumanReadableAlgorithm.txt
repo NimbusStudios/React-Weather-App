@@ -1,0 +1,56 @@
+Human Readable Algorithm for Weather App
+1. User Interface Design:
+
+Create a visually appealing and intuitive interface.
+Design elements to display weather conditions: temperature, humidity, wind speed, etc.
+Include navigation and search functionalities for different locations.
+Allow customization for themes and units (Celsius/Fahrenheit).
+
+2. Real-time Weather Information:
+
+Fetch and display current weather conditions.
+Provide hourly and daily weather forecasts.
+Allow users to toggle between daily and hourly forecasts.
+
+3. Location-Based Forecasting:
+
+Automatically detect the user's location (with permission).
+Allow users to search for other locations.
+Display weather information for the user's current and searched locations.
+
+4. Weather Alerts:
+
+Implement push notifications for severe weather alerts in the user's location.
+
+5. Multiple Locations:
+
+Enable users to save multiple locations.
+Allow easy switching between saved locations to view weather information.
+
+6. Customization:
+
+Allow theme customization.
+Provide options to change display units (Celsius vs. Fahrenheit).
+
+7. Offline Access:
+
+Cache weather data for offline access.
+
+8. Performance Optimization:
+
+Ensure fast loading and smooth performance.
+
+9. Privacy & Security:
+
+Protect user data and privacy according to relevant laws and regulations.
+
+10. Evaluation Criteria:
+
+User interface should be user-friendly and visually appealing.
+The app should flow intuitively from one function to another.
+Notifications for background processes and operations.
+Consistent and appealing design (colors and typography).
+Functionalities like location detection, search, weather details display, customization, and interactivity.
+Utilization of React.js features like components, state, and props.
+Good code quality and organization.
+Responsive design across different screen sizes.
