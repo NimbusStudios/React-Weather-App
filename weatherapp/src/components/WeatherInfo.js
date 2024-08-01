@@ -14,26 +14,18 @@ const WeatherInfo = ({ weatherData, units }) => {
   return (
     <div className="weather-info">
 
-      // We display the name of the location in an h2 element.
+
       <h2>{weatherData.name}</h2>
 
-      // We display the current temperature in a p element. If the units prop is
-      // set to 'metric', we display the temperature in degrees Celsius, otherwise
-      // we display it in degrees Fahrenheit.
+  
       <p>Temperature: {weatherData.main.temp}°{units === 'metric' ? 'C' : 'F'}</p>
 
-      // We display the current humidity in a p element, specifying the units
-      // as a percentage.
+    
       <p>Humidity: {weatherData.main.humidity}%</p>
 
-      // We display the current wind speed in a p element. If the units prop is
-      // set to 'metric', we display the wind speed in meters per second, otherwise
-      // we display it in miles per hour.
+     
       <p>Wind Speed: {weatherData.wind.speed} {units === 'metric' ? 'm/s' : 'mph'}</p>
 
-      // We leave a comment indicating that we should add hourly and daily forecasts
-      // here. We don't have to do anything at the moment, but we can add this
-      // functionality later.
       {/* Add hourly and daily forecasts here */}
 
     </div>
