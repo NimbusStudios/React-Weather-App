@@ -1,34 +1,40 @@
 /* Reset some default styles */
+/* This resets the default styles for all elements such as margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  
 }
 
 /* Body styles */
+/* This styles the body of the webpage */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f0f0f0;
   color: #333;
+
 }
 
 /* Main app container */
+/* This styles the main container of the app */
 .app {
   text-align: center;
   padding: 80px;
   box-sizing: border-box;
 
   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.068);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  
+  background: rgba(255, 255, 255, 0.068);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Theme styles */
+/* This styles the app when in light or dark mode */
 .app.light {
   color: #333;
   background: rgb(240, 240, 240);
@@ -36,22 +42,22 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .app.dark {
-  
   color: #ecf0f1;
   background: rgb(0, 0, 0);
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(19, 19, 19) 75%, rgb(0, 0, 0) 100%); 
 }
 
 /* Header styles */
+/* This styles the header of the app */
 header {
   padding: 20px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.068);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -74,27 +80,34 @@ header button {
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.068);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header button:hover {
+  /* From https://css.glass */
+background: rgba(173, 173, 173, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-header button:hover {
-  background-color: #1f6391;
+border: 1px solid rgba(173, 173, 173, 0.3);
 }
 
 /* Weather info styles */
+/* This styles the weather information section of the app */
 .weather-info {
   padding: 20px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.068);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   margin-bottom: 20px;
   display: flex;
@@ -113,15 +126,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .weather-info p {
-  font-size: 18px;
-  margin: 10 pxpx ;
-  padding: 1rem ;
+  font-size: 20px;
+  margin: 10px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* Form styles */
+/* This styles the form in the app */
 form {
   margin-top: 20px;
   display: flex;
@@ -130,14 +144,25 @@ form {
 }
 
 form input {
+  text-align: center;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #3498db;
+  border: none;
   border-radius: 50px;
-  margin-right: 10px;
-  width: 300px;
-  text-align: center;
-  margin: 3rem ;
+  cursor: pointer;
+  background-color: #f3f5f7;
+  color: #3498db;
+  transition: background-color 0.3s;
+  margin: 3rem;
+}
+
+form input:hover {
+  background: rgba(173, 173, 173, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(173, 173, 173, 0.3);
 }
 
 form button {
@@ -149,50 +174,29 @@ form button {
   background-color: #f3f5f7;
   color: #3498db;
   transition: background-color 0.3s;
-  margin: 3rem ;
+  margin: 3rem;
 }
 
 form button:hover {
-  background-color: #1f6391;
+/* From https://css.glass */
+background: rgba(173, 173, 173, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(173, 173, 173, 0.3);
 }
-
-
-
-.forecast {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.forecast-day {
-  background-color: #2980b9;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px;
-  width: 150px;
-  text-align: center;
-  color: white;
-}
-
-.forecast-day img {
-  width: 80px;
-  height: 80px;
-}
-
-
-
-
-
 
 /* Add responsive design */
+/* This styles the app for different screen sizes */
 @media (max-width: 900px) {
   form {
     flex-direction: column;
-    margin: 3rem ;
+    margin: 3rem;
   }
   .weather-info {
     flex-direction: column;
-    margin: 3rem ;
+    margin: 3rem;
   }
   form input {
     margin-bottom: 10px;
@@ -207,3 +211,4 @@ form button:hover {
     width: 100%;
   }
 }
+

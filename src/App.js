@@ -21,6 +21,7 @@ const App = () => {
     const getUserLocation = async () => {
       const coords = await detectUserLocation();
       if (coords) {
+        console.log('Location:', coords);
         setLocation(coords);
       }
     };
@@ -31,7 +32,9 @@ const App = () => {
   useEffect(() => {
     const updateWeather = async () => {
       if (location) {
+        console.log('Location:', location);
         const data = await fetchWeatherData(location, units);
+        console.log('Weather Data:', data);
         setWeatherData(data);
       }
     };
